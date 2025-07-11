@@ -1,0 +1,27 @@
+GET http://localhost:3000/contacts
+###
+GET http://localhost:3000/contacts/<id>
+###
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john@example.com",
+  "favoriteColor": "purple",
+  "birthday": "1995-06-15"
+}
+###
+PUT http://localhost:3000/contacts/<id>
+Content-Type: application/json
+
+{
+  "firstName": "Johnny",
+  "lastName": "Doe",
+  "email": "johnny@example.com",
+  "favoriteColor": "orange",
+  "birthday": "1995-06-15"
+}
+###
+DELETE http://localhost:3000/contacts/<id>
