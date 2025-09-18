@@ -1,6 +1,6 @@
 GET http://localhost:3000/contacts
 ###
-GET http://localhost:3000/contacts/<id>
+GET http://localhost:3000/contacts/686d77d575e3e100a9864989
 ###
 POST http://localhost:3000/contacts
 Content-Type: application/json
@@ -12,16 +12,17 @@ Content-Type: application/json
   "favoriteColor": "purple",
   "birthday": "1995-06-15"
 }
+
 ###
-PUT http://localhost:3000/contacts/<id>
+PUT http://localhost:3000/contacts/686d77d575e3e100a986498a
 Content-Type: application/json
 
 {
   "firstName": "Johnny",
   "lastName": "Doe",
   "email": "johnny@example.com",
-  "favoriteColor": "orange",
+  "favoriteColor": "Red",
   "birthday": "1995-06-15"
 }
 ###
-DELETE http://localhost:3000/contacts/<id>
+DELETE http://localhost:3000/contacts/6884224a082ddad95d1fb319
